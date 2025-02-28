@@ -1,5 +1,27 @@
 "use strict";
 document.addEventListener("DOMContentLoaded", () => {
+    const txtEfeito = document.querySelector("#txtEfeito");
+    const alfabeto = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    let intervalo = null;
+    if (!txtEfeito)
+        return;
+    const textoOriginal = txtEfeito.dataset.texto || txtEfeito.innerText;
+    txtEfeito.addEventListener("mouseover", () => {
+        let contador = 0;
+        if (intervalo)
+            clearInterval(intervalo);
+        intervalo = window.setInterval(() => {
+            txtEfeito.innerText = textoOriginal
+                .split("")
+                .map((_, i) => (i < contador ? textoOriginal[i] : alfabeto[Math.floor(Math.random() * 26)]))
+                .join("");
+            if (contador >= textoOriginal.length) {
+                if (intervalo)
+                    clearInterval(intervalo);
+            }
+            contador += 1 / 3;
+        }, 30);
+    });
     const form = document.getElementById("briefingForm");
     if (!form)
         return;
@@ -11,7 +33,9 @@ document.addEventListener("DOMContentLoaded", () => {
             data[key] = value.toString();
         });
         const checkboxes = document.querySelectorAll('input[name="caracteristicas"]:checked');
-        const caracteristicas = Array.from(checkboxes).map((checkbox) => checkbox.value).join(", ");
+        const caracteristicas = Array.from(checkboxes)
+            .map((checkbox) => checkbox.value)
+            .join(", ");
         const numeroWhatsApp = "5511999999999";
         const mensagem = `
             📌 *Novo Briefing Recebido*  
