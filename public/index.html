@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GG - Briefing para Marca</title>
+    <link href="/public/assets/css/output.css" rel="stylesheet">
+    <script src="/public/assets/js/script.js"></script>
+</head>
+<body class="bg-gray-950 text-gray-200">
+
+    <div class="max-w-5xl mx-auto p-6 bg-gray-900 rounded-lg shadow-md mt-10">
+        <h1 class="text-2xl font-bold text-center mb-6">Briefing para Marca</h1>
+        
+        <form id="briefingForm" class="space-y-5">
+
+            <div class="relative">
+                <textarea 
+                    name="empresa"
+                    class="peer w-full min-h-[52px] max-h-[200px] rounded-xl px-4 py-3 bg-black border-0 resize-none focus:ring-0 focus:outline-none leading-[1.2] text-gray-200"
+                    required
+                ></textarea>
+                <label class="absolute left-[10px] top-[5px] text-md  px-1 text-gray-300  transition-all duration-300 ease-in-out
+                    peer-focus:-translate-y-[25px] peer-valid:-translate-y-[25px] peer-placeholder-shown:top-[5px] peer-placeholder-shown:text-gray-400 
+                    peer-focus:text-gray-400 peer-valid:text-gray-400 pointer-events-none">
+                    Me fale um pouco da sua empresa:
+                </label>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-7 mb-7" >
+                
+                <div class="relative">
+                    <input 
+                        type="text" 
+                        name="definicao" 
+                        class="peer w-full min-h-[52px] rounded-xl px-4 py-3 bg-black border-0 focus:ring-0 focus:outline-none leading-[1.2] text-gray-200"
+                        required
+                    >
+                    <label class="absolute left-[10px] top-[5px] text-md px-1 text-gray-300 transition-all duration-300 ease-in-out
+                        peer-focus:-translate-y-[25px] peer-valid:-translate-y-[25px] peer-placeholder-shown:top-[5px] peer-placeholder-shown:text-gray-400 
+                        peer-focus:text-gray-400 peer-valid:text-gray-400 pointer-events-none">
+                        Defina seu negócio em 2 palavras:
+                    </label>
+                </div>
+
+              
+                
+                <div class="relative">
+                    <input 
+                        type="text" 
+                        name="texto_assinado" 
+                        class="peer w-full min-h-[52px] rounded-xl px-4 py-3 bg-black border-0 focus:ring-0 focus:outline-none leading-[1.2] text-gray-200"
+                        required
+                    >
+                    <label class="absolute left-[10px] top-[5px] text-md px-1 text-gray-300 transition-all duration-300 ease-in-out
+                        peer-focus:-translate-y-[25px] peer-valid:-translate-y-[25px] peer-placeholder-shown:top-[5px] peer-placeholder-shown:text-gray-400 
+                        peer-focus:text-gray-400 peer-valid:text-gray-400 pointer-events-none">
+                        Qual será o texto assinado na marca?
+                    </label>
+                </div>
+
+                
+
+                <div class="relative">
+                    <input 
+                        type="text" 
+                        name="slogan"
+                        class="peer w-full min-h-[52px] rounded-xl px-4 py-3 bg-black border-0 focus:ring-0 focus:outline-none leading-[1.2] text-gray-200"
+                        required
+                    >
+                    <label class="absolute left-[10px] top-[5px] text-md px-1 text-gray-300 transition-all duration-300 ease-in-out
+                        peer-focus:-translate-y-[25px] peer-valid:-translate-y-[25px] peer-placeholder-shown:top-[5px] peer-placeholder-shown:text-gray-400 
+                        peer-focus:text-gray-400 peer-valid:text-gray-400 pointer-events-none">
+                        Possui um slogan? Se sim, qual o texto?
+                    </label>
+                </div>
+
+              
+                <div class="relative">
+                    <input 
+                        type="text" 
+                        name="mensagem_positiva"
+                        class="peer w-full min-h-[52px] rounded-xl px-4 py-3 bg-black border-0 focus:ring-0 focus:outline-none leading-[1.2] text-gray-200"
+                        required
+                    >
+                    <label class="absolute left-[10px] top-[5px] text-md px-1 text-gray-300 transition-all duration-300 ease-in-out
+                        peer-focus:-translate-y-[25px] peer-valid:-translate-y-[25px] peer-placeholder-shown:top-[5px] peer-placeholder-shown:text-gray-400 
+                      peer-focus:text-gray-400 peer-valid:text-gray-400 pointer-events-none">
+                        Qual mensagem sua marca vai transmitir para o público?
+                    </label>
+                </div>
+
+               
+
+                <div class="relative">
+                    <input 
+                        type="text" 
+                        name="mensagem_negativa"
+                        class="peer w-full min-h-[52px] rounded-xl px-4 py-3 bg-black border-0 focus:ring-0 focus:outline-none leading-[1.2] text-gray-200"
+                        required
+                    >
+                    <label class="absolute left-[10px] top-[5px] text-md px-1 text-gray-300 transition-all duration-300 ease-in-out
+                        peer-focus:-translate-y-[25px] peer-valid:-translate-y-[25px] peer-placeholder-shown:top-[5px] peer-placeholder-shown:text-gray-400 
+                        peer-focus:text-gray-400 peer-valid:text-gray-400 pointer-events-none">
+                        Qual mensagem sua marca NÃO vai transmitir para o público?
+                    </label>
+                </div>
+
+            </div>
+
+            <div class="relative">
+                <textarea 
+                    name="publico" 
+                    type="text" 
+                    class="peer w-full min-h-[52px] max-h-[200px] rounded-xl px-4 py-3 bg-black border-0 resize-none focus:ring-0 focus:outline-none leading-[1.2] text-gray-200"
+                    required
+                ></textarea>
+                <label class="absolute left-[10px] top-[5px] text-md px-1 text-gray-300 transition-all duration-300 ease-in-out
+                    peer-focus:-translate-y-[25px] peer-valid:-translate-y-[25px] peer-placeholder-shown:top-[5px] peer-placeholder-shown:text-gray-400 
+                    peer-focus:text-gray-400 peer-valid:text-gray-400 pointer-events-none">
+                    Sobre seus clientes (gênero, idade, região, poder aquisitivo etc.)
+                </label>
+            </div>
+
+            
+
+            <div class="relative">
+                <textarea 
+                    name="concorrentes"
+                    type="text" 
+                    class="peer w-full min-h-[52px] max-h-[200px] rounded-xl px-4 py-3 bg-black border-0 resize-none focus:ring-0 focus:outline-none leading-[1.2] text-gray-200"
+                    required
+                ></textarea>
+                <label class="absolute left-[10px] top-[5px] text-md px-1 text-gray-300 transition-all duration-300 ease-in-out
+                    peer-focus:-translate-y-[25px] peer-valid:-translate-y-[25px] peer-placeholder-shown:top-[5px] peer-placeholder-shown:text-gray-400 
+                    peer-focus:text-gray-400 peer-valid:text-gray-400 pointer-events-none">
+                    Sobre seus concorrentes (forneça URLs, se possível):
+                </label>
+            </div>
+
+            
+            
+            <div class="relative">
+                <textarea 
+                    name="diferenciais"
+                    type="text" 
+                    class="peer w-full min-h-[52px] max-h-[200px] rounded-xl px-4 py-3 bg-black border-0 resize-none focus:ring-0 focus:outline-none leading-[1.2] text-gray-200"
+                    required
+                ></textarea>
+                <label class="absolute left-[10px] top-[5px] text-md px-1 text-gray-300 transition-all duration-300 ease-in-out
+                    peer-focus:-translate-y-[25px] peer-valid:-translate-y-[25px] peer-placeholder-shown:top-[5px] peer-placeholder-shown:text-gray-400 
+                    peer-focus:text-gray-400 peer-valid:text-gray-400 pointer-events-none">
+                    O que te difere dos seus concorrentes?
+                </label>
+            </div>
+
+            
+
+            <label class="block font-bold">Imagem a ser projetada:</label>
+            <div class="grid grid-cols-2 gap-2">
+                <label><input type="checkbox" name="caracteristicas" value="Moderno"> Moderno</label>
+                <label><input type="checkbox" name="caracteristicas" value="Conservador"> Conservador</label>
+                <label><input type="checkbox" name="caracteristicas" value="Sério"> Sério</label>
+                <label><input type="checkbox" name="caracteristicas" value="Descontraído"> Descontraído</label>
+                <label><input type="checkbox" name="caracteristicas" value="Popular"> Popular</label>
+                <label><input type="checkbox" name="caracteristicas" value="Singular"> Singular</label>
+                <label><input type="checkbox" name="caracteristicas" value="Pesado"> Pesado</label>
+                <label><input type="checkbox" name="caracteristicas" value="Leve"> Leve</label>
+            </div>
+
+            <div class="relative">
+                <textarea 
+                    name="outras_caracteristicas"
+                    type="text" 
+                    class="peer w-full min-h-[52px] max-h-[200px] rounded-xl px-4 py-3 bg-black border-0 resize-none focus:ring-0 focus:outline-none leading-[1.2] text-gray-200"
+                    required
+                ></textarea>
+                <label class="absolute left-[10px] top-[5px] text-md px-1 text-gray-300 transition-all duration-300 ease-in-out
+                    peer-focus:-translate-y-[25px] peer-valid:-translate-y-[25px] peer-placeholder-shown:top-[5px] peer-placeholder-shown:text-gray-400 
+                    peer-focus:text-gray-400 peer-valid:text-gray-400 pointer-events-none">
+                    Complete ou descreva outras características:
+                </label>
+            </div>
+
+           
+
+            <div class="relative">
+                <textarea 
+                    name="informacoes_adicionais"
+                    type="text" 
+                    class="peer w-full min-h-[52px] max-h-[200px] rounded-xl px-4 py-3 bg-black border-0 resize-none focus:ring-0 focus:outline-none leading-[1.2] text-gray-200"
+                    required
+                ></textarea>
+                <label class="absolute left-[10px] top-[5px] text-md px-1 text-gray-300 transition-all duration-300 ease-in-out
+                    peer-focus:-translate-y-[25px] peer-valid:-translate-y-[25px] peer-placeholder-shown:top-[5px] peer-placeholder-shown:text-gray-400 
+                    peer-focus:text-gray-400 peer-valid:text-gray-400 pointer-events-none">
+                    Ainda tem algo a dizer?
+                </label>
+            </div>
+
+            
+
+            <button type="submit" class="w-full bg-blue-950 hover:opacity-50 text-white p-3 rounded mt-4 ">
+                Enviar para WhatsApp
+            </button>
+        </form>
+    </div>
+
+</body>
+</html>

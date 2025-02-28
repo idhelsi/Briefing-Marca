@@ -1,0 +1,17 @@
+label {
+    position: absolute;
+    left: 50px;
+    top: 65´x; 
+    background: #FFF;
+    padding: 0px 5px;
+    transform: transform 0.3s ease, color 0.3s ease;
+}
+
+input:focus+label {
+    transform: translateY(-25px);
+    color: #0051FF;
+}
+
+input:focus {
+    border-color: #0051FF;
+}
