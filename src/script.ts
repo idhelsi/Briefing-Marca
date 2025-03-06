@@ -1,32 +1,36 @@
 document.addEventListener("DOMContentLoaded", () => {
+  const txtEfeito = document.querySelector<HTMLElement>("#txtEfeito");
+  const alfabeto: string = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
-    const txtEfeito = document.querySelector<HTMLElement>("#txtEfeito");
-    const alfabeto: string = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-  
-    let intervalo: number | null = null;
-  
-    if (!txtEfeito) return; // Garante que o elemento existe antes de continuar
-  
-    const textoOriginal: string = txtEfeito.dataset.texto || txtEfeito.innerText;
-  
-    txtEfeito.addEventListener("mouseover", () => {
-      let contador = 0;
-      if (intervalo) clearInterval(intervalo);
-  
-      intervalo = window.setInterval(() => {
-        txtEfeito.innerText = textoOriginal
-          .split("")
-          .map((_, i) => (i < contador ? textoOriginal[i] : alfabeto[Math.floor(Math.random() * 26)]))
-          .join("");
-  
-        if (contador >= textoOriginal.length) {
-          if (intervalo) clearInterval(intervalo);
-        }
-  
-        contador += 1 / 3;
-      }, 30);
-    });
+  let intervalo: number | null = null;
 
+  if (!txtEfeito) return; // Garante que o elemento existe antes de continuar
+
+  const textoOriginal: string = txtEfeito.dataset.texto || txtEfeito.innerText;
+
+  txtEfeito.addEventListener("mouseover", () => {
+    let contador = 0;
+    if (intervalo) clearInterval(intervalo);
+
+    intervalo = window.setInterval(() => {
+      txtEfeito.innerText = textoOriginal
+        .split("")
+        .map((_, i) =>
+          i < contador
+            ? textoOriginal[i]
+            : alfabeto[Math.floor(Math.random() * 26)]
+        )
+        .join("");
+
+      if (contador >= textoOriginal.length) {
+        if (intervalo) clearInterval(intervalo);
+      }
+
+      contador += 1 / 3;
+    }, 30);
+  });
+
+  
   const form = document.getElementById("briefingForm") as HTMLFormElement;
 
   if (!form) return;

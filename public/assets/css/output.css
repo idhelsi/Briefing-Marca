@@ -541,8 +541,26 @@
   .relative {
     position: relative;
   }
+  .top-\[1px\] {
+    top: 1px;
+  }
+  .top-\[2px\] {
+    top: 2px;
+  }
+  .top-\[3px\] {
+    top: 3px;
+  }
+  .top-\[4px\] {
+    top: 4px;
+  }
   .top-\[5px\] {
     top: 5px;
+  }
+  .left-\[5px\] {
+    left: 5px;
+  }
+  .left-\[7px\] {
+    left: 7px;
   }
   .left-\[10px\] {
     left: 10px;
@@ -769,6 +787,9 @@
   .to-pink-500 {
     --tw-gradient-to: var(--color-pink-500);
     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .p-1 {
+    padding: calc(var(--spacing) * 1);
   }
   .p-3 {
     padding: calc(var(--spacing) * 3);

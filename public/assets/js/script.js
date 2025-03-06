@@ -13,7 +13,9 @@ document.addEventListener("DOMContentLoaded", () => {
         intervalo = window.setInterval(() => {
             txtEfeito.innerText = textoOriginal
                 .split("")
-                .map((_, i) => (i < contador ? textoOriginal[i] : alfabeto[Math.floor(Math.random() * 26)]))
+                .map((_, i) => i < contador
+                ? textoOriginal[i]
+                : alfabeto[Math.floor(Math.random() * 26)])
                 .join("");
             if (contador >= textoOriginal.length) {
                 if (intervalo)
