@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,26 +9,71 @@
   </head>
 
   <body class="bg-gray-950">
-    <div class="max-w-3xl mx-auto p-6 bg-gray-900 rounded-lg shadow-md mt-10">
-        <h1 id="txtEfeito" class="font-mono text-3xl font-bold text-center mb-6 text-gray-300 cursor-pointer hover:text-gray-400 py-2 px-3 rounded-md" data-texto="BRIEFING PARA MARCA">
-            BRIEFING PARA MARCA
+    <div class="max-w-3xl mx-auto p-6 bg-gray-900 rounded-lg shadow-md mt-10 mb-10">
+        <h1 id="txtEfeito" class="font-mono text-3xl font-bold text-center mb-6 text-gray-300 cursor-pointer hover:text-gray-400 py-2 px-3 rounded-md" data-texto="BRIEFING PARA CRIAÇÃO DE MARCA">
+            BRIEFING PARA CRIAÇÃO DE MARCA
         </h1>
+        
+        <p class="text-gray-300 mb-8 text-center">Obrigado por confiar no meu trabalho! Este briefing vai nos ajudar a criar uma marca forte e alinhada com os seus objetivos. Responda com o máximo de detalhes possível.</p>
 
       <form id="briefingForm" class="space-y-5">
-        <div class="relative">
-          <textarea
-            name="empresa"
-            class="peer w-full min-h-[52px] max-h-[200px] rounded-xl px-4 py-3 bg-black border-0 resize-none focus:ring-0 focus:outline-none leading-[1.2] text-gray-200"
-            required
-          ></textarea>
-          <label
-            class="absolute left-[10px] top-[4px] text-md px-1 text-gray-300 transition-all duration-300 ease-in-out peer-focus:-translate-y-[25px] peer-valid:-translate-y-[25px] peer-placeholder-shown:top-[5px] peer-placeholder-shown:text-gray-400 peer-focus:text-gray-400 peer-valid:text-gray-400 pointer-events-none peer-focus:truncate peer-valid:truncate peer-focus:w-[80%] peer-valid:w-[80%] peer-focus:overflow-hidden peer-valid:overflow-hidden"
-          >
-            Me fale um pouco da sua empresa:
-          </label>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-7 mb-7">
+        <!-- Seção 1: SOBRE SUA EMPRESA -->
+        <div class="bg-gray-800 p-4 rounded-lg mb-5">
+          <h2 class="text-xl font-bold text-gray-300 mb-4">1. SOBRE SUA EMPRESA</h2>
+          
+          <div class="relative mb-5">
+            <input
+              type="text"
+              name="nome_empresa"
+              class="peer w-full min-h-[52px] rounded-xl px-4 py-3 bg-black border-0 focus:ring-0 focus:outline-none leading-[1.2] text-gray-200"
+              required
+            />
+            <label
+              class="absolute left-[7px] top-[1px] text-md px-1 text-gray-300 transition-all duration-300 ease-in-out peer-focus:-translate-y-[25px] peer-valid:-translate-y-[25px] peer-placeholder-shown:top-[5px] peer-placeholder-shown:text-gray-400 peer-focus:text-gray-400 peer-valid:text-gray-400 pointer-events-none peer-focus:truncate peer-valid:truncate peer-focus:w-[80%] peer-valid:w-[80%] peer-focus:overflow-hidden peer-valid:overflow-hidden"
+            >
+              1.1. Qual o nome da empresa?
+            </label>
+          </div>
+          
+          <div class="relative mb-5">
+            <textarea
+              name="descricao_empresa"
+              class="peer w-full min-h-[80px] max-h-[200px] rounded-xl px-4 py-3 bg-black border-0 resize-none focus:ring-0 focus:outline-none leading-[1.2] text-gray-200"
+              required
+            ></textarea>
+            <label
+              class="absolute left-[10px] top-[4px] text-md px-1 text-gray-300 transition-all duration-300 ease-in-out peer-focus:-translate-y-[25px] peer-valid:-translate-y-[25px] peer-placeholder-shown:top-[5px] peer-placeholder-shown:text-gray-400 peer-focus:text-gray-400 peer-valid:text-gray-400 pointer-events-none peer-focus:truncate peer-valid:truncate peer-focus:w-[80%] peer-valid:w-[80%] peer-focus:overflow-hidden peer-valid:overflow-hidden"
+            >
+              1.2. O que a sua empresa faz? (Produtos/serviços, história, propósito)
+            </label>
+          </div>
+          
+          <div class="relative mb-5">
+            <textarea
+              name="missao_visao_valores"
+              class="peer w-full min-h-[80px] max-h-[200px] rounded-xl px-4 py-3 bg-black border-0 resize-none focus:ring-0 focus:outline-none leading-[1.2] text-gray-200"
+              required
+            ></textarea>
+            <label
+              class="absolute left-[10px] top-[4px] text-md px-1 text-gray-300 transition-all duration-300 ease-in-out peer-focus:-translate-y-[25px] peer-valid:-translate-y-[25px] peer-placeholder-shown:top-[5px] peer-placeholder-shown:text-gray-400 peer-focus:text-gray-400 peer-valid:text-gray-400 pointer-events-none peer-focus:truncate peer-valid:truncate peer-focus:w-[80%] peer-valid:w-[80%] peer-focus:overflow-hidden peer-valid:overflow-hidden"
+            >
+              1.3. Qual é a missão, visão e valores da sua empresa?
+            </label>
+          </div>
+          
+          <div class="relative mb-5">
+            <textarea
+              name="percepcao_mercado"
+              class="peer w-full min-h-[52px] max-h-[200px] rounded-xl px-4 py-3 bg-black border-0 resize-none focus:ring-0 focus:outline-none leading-[1.2] text-gray-200"
+              required
+            ></textarea>
+            <label
+              class="absolute left-[10px] top-[4px] text-md px-1 text-gray-300 transition-all duration-300 ease-in-out peer-focus:-translate-y-[25px] peer-valid:-translate-y-[25px] peer-placeholder-shown:top-[5px] peer-placeholder-shown:text-gray-400 peer-focus:text-gray-400 peer-valid:text-gray-400 pointer-events-none peer-focus:truncate peer-valid:truncate peer-focus:w-[80%] peer-valid:w-[80%] peer-focus:overflow-hidden peer-valid:overflow-hidden"
+            >
+              1.4. Como você gostaria que sua empresa fosse percebida pelo mercado?
+            </label>
+          </div>
+          
           <div class="relative">
             <input
               type="text"
@@ -39,25 +84,30 @@
             <label
               class="absolute left-[7px] top-[1px] text-md px-1 text-gray-300 transition-all duration-300 ease-in-out peer-focus:-translate-y-[25px] peer-valid:-translate-y-[25px] peer-placeholder-shown:top-[5px] peer-placeholder-shown:text-gray-400 peer-focus:text-gray-400 peer-valid:text-gray-400 pointer-events-none peer-focus:truncate peer-valid:truncate peer-focus:w-[80%] peer-valid:w-[80%] peer-focus:overflow-hidden peer-valid:overflow-hidden"
             >
-              Defina seu negócio em 2 palavras:
+              1.5. Defina seu negócio em duas palavras:
             </label>
           </div>
-
-          <div class="relative">
+        </div>
+        
+        <!-- Seção 2: SOBRE A IDENTIDADE DA MARCA -->
+        <div class="bg-gray-800 p-4 rounded-lg mb-5">
+          <h2 class="text-xl font-bold text-gray-300 mb-4">2. SOBRE A IDENTIDADE DA MARCA</h2>
+          
+          <div class="relative mb-5">
             <input
               type="text"
-              name="texto_assinado"
+              name="nome_marca"
               class="peer w-full min-h-[52px] rounded-xl px-4 py-3 bg-black border-0 focus:ring-0 focus:outline-none leading-[1.2] text-gray-200"
               required
             />
             <label
               class="absolute left-[7px] top-[1px] text-md px-1 text-gray-300 transition-all duration-300 ease-in-out peer-focus:-translate-y-[25px] peer-valid:-translate-y-[25px] peer-placeholder-shown:top-[5px] peer-placeholder-shown:text-gray-400 peer-focus:text-gray-400 peer-valid:text-gray-400 pointer-events-none peer-focus:truncate peer-valid:truncate peer-focus:w-[80%] peer-valid:w-[80%] peer-focus:overflow-hidden peer-valid:overflow-hidden"
             >
-              Qual será o texto assinado na marca?
+              2.1. Qual será o nome oficial da marca? (Ex.: Coca-Cola)
             </label>
           </div>
-
-          <div class="relative">
+          
+          <div class="relative mb-5">
             <input
               type="text"
               name="slogan"
@@ -67,221 +117,282 @@
             <label
               class="absolute left-[7px] top-[1px] text-md px-1 text-gray-300 transition-all duration-300 ease-in-out peer-focus:-translate-y-[25px] peer-valid:-translate-y-[25px] peer-placeholder-shown:top-[5px] peer-placeholder-shown:text-gray-400 peer-focus:text-gray-400 peer-valid:text-gray-400 pointer-events-none peer-focus:truncate peer-valid:truncate peer-focus:w-[80%] peer-valid:w-[80%] peer-focus:overflow-hidden peer-valid:overflow-hidden"
             >
-              Possui um slogan? Se sim, qual o texto?
+              2.2. Sua marca possui um slogan? (Se sim, qual?)
             </label>
           </div>
-
-          <div class="relative">
-            <input
-              type="text"
+          
+          <div class="relative mb-5">
+            <textarea
               name="mensagem_positiva"
-              class="peer w-full min-h-[52px] rounded-xl px-4 py-3 bg-black border-0 focus:ring-0 focus:outline-none leading-[1.2] text-gray-200"
+              class="peer w-full min-h-[52px] max-h-[200px] rounded-xl px-4 py-3 bg-black border-0 resize-none focus:ring-0 focus:outline-none leading-[1.2] text-gray-200"
               required
-            />
+            ></textarea>
             <label
-              class="absolute left-[7px] top-[1px] text-md px-1 text-gray-300 transition-all duration-300 ease-in-out peer-focus:-translate-y-[25px] peer-valid:-translate-y-[25px] peer-placeholder-shown:top-[5px] peer-placeholder-shown:text-gray-400 peer-focus:text-gray-400 peer-valid:text-gray-400 pointer-events-none peer-focus:truncate peer-valid:truncate peer-focus:w-[80%] peer-valid:w-[80%] peer-focus:overflow-hidden peer-valid:overflow-hidden"
+              class="absolute left-[10px] top-[4px] text-md px-1 text-gray-300 transition-all duration-300 ease-in-out peer-focus:-translate-y-[25px] peer-valid:-translate-y-[25px] peer-placeholder-shown:top-[5px] peer-placeholder-shown:text-gray-400 peer-focus:text-gray-400 peer-valid:text-gray-400 pointer-events-none peer-focus:truncate peer-valid:truncate peer-focus:w-[80%] peer-valid:w-[80%] peer-focus:overflow-hidden peer-valid:overflow-hidden"
             >
-              Qual mensagem sua marca vai transmitir para o público?
+              2.3. Qual mensagem principal sua marca deve transmitir para o público?
             </label>
           </div>
-
+          
           <div class="relative">
-            <input
-              type="text"
+            <textarea
               name="mensagem_negativa"
-              class="peer w-full min-h-[52px] rounded-xl px-4 py-3 bg-black border-0 focus:ring-0 focus:outline-none leading-[1.2] text-gray-200"
+              class="peer w-full min-h-[52px] max-h-[200px] rounded-xl px-4 py-3 bg-black border-0 resize-none focus:ring-0 focus:outline-none leading-[1.2] text-gray-200"
               required
-            />
+            ></textarea>
             <label
-              class="absolute left-[7px] top-[1px] text-md px-1 text-gray-300 transition-all duration-300 ease-in-out peer-focus:-translate-y-[25px] peer-valid:-translate-y-[25px] peer-placeholder-shown:top-[5px] peer-placeholder-shown:text-gray-400 peer-focus:text-gray-400 peer-valid:text-gray-400 pointer-events-none peer-focus:truncate peer-valid:truncate peer-focus:w-[80%] peer-valid:w-[80%] peer-focus:overflow-hidden peer-valid:overflow-hidden"
+              class="absolute left-[10px] top-[4px] text-md px-1 text-gray-300 transition-all duration-300 ease-in-out peer-focus:-translate-y-[25px] peer-valid:-translate-y-[25px] peer-placeholder-shown:top-[5px] peer-placeholder-shown:text-gray-400 peer-focus:text-gray-400 peer-valid:text-gray-400 pointer-events-none peer-focus:truncate peer-valid:truncate peer-focus:w-[80%] peer-valid:w-[80%] peer-focus:overflow-hidden peer-valid:overflow-hidden"
             >
-              Qual mensagem sua marca NÃO vai transmitir para o público?
+              2.4. Qual mensagem sua marca NÃO deve transmitir?
             </label>
           </div>
         </div>
 
-        <div class="relative">
-          <textarea
-            name="publico"
-            type="text"
-            class="peer w-full min-h-[52px] max-h-[200px] rounded-xl px-4 py-3 bg-black border-0 resize-none focus:ring-0 focus:outline-none leading-[1.2] text-gray-200"
-            required
-          ></textarea>
-          <label
-            class="absolute left-[10px] top-[4px] text-md px-1 text-gray-300 transition-all duration-300 ease-in-out peer-focus:-translate-y-[25px] peer-valid:-translate-y-[25px] peer-placeholder-shown:top-[5px] peer-placeholder-shown:text-gray-400 peer-focus:text-gray-400 peer-valid:text-gray-400 pointer-events-none peer-focus:truncate peer-valid:truncate peer-focus:w-[80%] peer-valid:w-[80%] peer-focus:overflow-hidden peer-valid:overflow-hidden"
-          >
-            Sobre seus clientes (gênero, idade, região, poder aquisitivo etc.)
-          </label>
-        </div>
-
-        <div class="relative">
-          <textarea
-            name="concorrentes"
-            type="text"
-            class="peer w-full min-h-[52px] max-h-[200px] rounded-xl px-4 py-3 bg-black border-0 resize-none focus:ring-0 focus:outline-none leading-[1.2] text-gray-200"
-            required
-          ></textarea>
-          <label
-            class="absolute left-[10px] top-[4px] text-md px-1 text-gray-300 transition-all duration-300 ease-in-out peer-focus:-translate-y-[25px] peer-valid:-translate-y-[25px] peer-placeholder-shown:top-[5px] peer-placeholder-shown:text-gray-400 peer-focus:text-gray-400 peer-valid:text-gray-400 pointer-events-none peer-focus:truncate peer-valid:truncate peer-focus:w-[80%] peer-valid:w-[80%] peer-focus:overflow-hidden peer-valid:overflow-hidden"
-          >
-            Sobre seus concorrentes (forneça URLs, se possível):
-          </label>
-        </div>
-
-        <div class="relative">
-          <textarea
-            name="diferenciais"
-            type="text"
-            class="peer w-full min-h-[52px] max-h-[200px] rounded-xl px-4 py-3 bg-black border-0 resize-none focus:ring-0 focus:outline-none leading-[1.2] text-gray-200"
-            required
-          ></textarea>
-          <label
-            class="absolute left-[10px] top-[4px] text-md px-1 text-gray-300 transition-all duration-300 ease-in-out peer-focus:-translate-y-[25px] peer-valid:-translate-y-[25px] peer-placeholder-shown:top-[5px] peer-placeholder-shown:text-gray-400 peer-focus:text-gray-400 peer-valid:text-gray-400 pointer-events-none peer-focus:truncate peer-valid:truncate peer-focus:w-[80%] peer-valid:w-[80%] peer-focus:overflow-hidden peer-valid:overflow-hidden"
-          >
-            O que te difere dos seus concorrentes?
-          </label>
-        </div>
-
-        <label class="block font-bold text-gray-300">Imagem a ser projetada:</label>
-        <div class="grid grid-cols-2 gap-2">
-          <label class="relative flex items-center cursor-pointer group">
-            <input
-              class="peer sr-only"
-              type="checkbox"
-              name="caracteristicas"
-              value="Moderno"
-            />
-            <div
-              class="w-6 h-6 rounded-lg bg-gray-950 border-2 border-gray-500 transition-all duration-300 ease-in-out peer-checked:bg-gradient-to-br from-gray-700 to-gray-800 peer-checked:border-0 peer-checked:rotate-12 after:content-[''] after:absolute after:top-1/2 after:left-1/2 after:-translate-x-1/2 after:-translate-y-1/2 after:w-5 after:h-5 after:opacity-0 after:bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj48cG9seWxpbmUgcG9pbnRzPSIyMCA2IDkgMTcgNCAxMiI+PC9wb2x5bGluZT48L3N2Zz4=')] after:bg-contain after:bg-no-repeat peer-checked:after:opacity-100 after:transition-opacity after:duration-300 hover:shadow-[0_0_15px_rgba(168,85,247,0.5)]"
-            ></div>
-            <span class="ml-3 text-sm font-medium text-gray-300">Moderno</span>
-          </label>
-
-          <label class="relative flex items-center cursor-pointer group">
-            <input
-              class="peer sr-only"
-              type="checkbox"
-              name="caracteristicas"
-              value="Conservador"
-            />
-            <div
-              class="w-6 h-6 rounded-lg bg-gray-950 border-2 border-gray-500 transition-all duration-300 ease-in-out peer-checked:bg-gradient-to-br from-gray-700 to-gray-800 peer-checked:border-0 peer-checked:rotate-12 after:content-[''] after:absolute after:top-1/2 after:left-1/2 after:-translate-x-1/2 after:-translate-y-1/2 after:w-5 after:h-5 after:opacity-0 after:bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj48cG9seWxpbmUgcG9pbnRzPSIyMCA2IDkgMTcgNCAxMiI+PC9wb2x5bGluZT48L3N2Zz4=')] after:bg-contain after:bg-no-repeat peer-checked:after:opacity-100 after:transition-opacity after:duration-300 hover:shadow-[0_0_15px_rgba(168,85,247,0.5)]"
-            ></div>
-            <span class="ml-3 text-sm font-medium text-gray-300"
-              >Conservador</span
+        <!-- Seção 3: PÚBLICO-ALVO -->
+        <div class="bg-gray-800 p-4 rounded-lg mb-5">
+          <h2 class="text-xl font-bold text-gray-300 mb-4">3. PÚBLICO-ALVO</h2>
+          
+          <div class="relative mb-5">
+            <textarea
+              name="publico"
+              class="peer w-full min-h-[80px] max-h-[200px] rounded-xl px-4 py-3 bg-black border-0 resize-none focus:ring-0 focus:outline-none leading-[1.2] text-gray-200"
+              required
+            ></textarea>
+            <label
+              class="absolute left-[10px] top-[4px] text-md px-1 text-gray-300 transition-all duration-300 ease-in-out peer-focus:-translate-y-[25px] peer-valid:-translate-y-[25px] peer-placeholder-shown:top-[5px] peer-placeholder-shown:text-gray-400 peer-focus:text-gray-400 peer-valid:text-gray-400 pointer-events-none peer-focus:truncate peer-valid:truncate peer-focus:w-[80%] peer-valid:w-[80%] peer-focus:overflow-hidden peer-valid:overflow-hidden"
             >
-          </label>
-
-          <label class="relative flex items-center cursor-pointer group">
-            <input
-              class="peer sr-only"
-              type="checkbox"
-              name="caracteristicas"
-              value="Sério"
-            />
-            <div
-              class="w-6 h-6 rounded-lg bg-gray-950 border-2 border-gray-500 transition-all duration-300 ease-in-out peer-checked:bg-gradient-to-br from-gray-700 to-gray-800 peer-checked:border-0 peer-checked:rotate-12 after:content-[''] after:absolute after:top-1/2 after:left-1/2 after:-translate-x-1/2 after:-translate-y-1/2 after:w-5 after:h-5 after:opacity-0 after:bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj48cG9seWxpbmUgcG9pbnRzPSIyMCA2IDkgMTcgNCAxMiI+PC9wb2x5bGluZT48L3N2Zz4=')] after:bg-contain after:bg-no-repeat peer-checked:after:opacity-100 after:transition-opacity after:duration-300 hover:shadow-[0_0_15px_rgba(168,85,247,0.5)]"
-            ></div>
-            <span class="ml-3 text-sm font-medium text-gray-300">Sério</span>
-          </label>
-
-          <label class="relative flex items-center cursor-pointer group">
-            <input
-              class="peer sr-only"
-              type="checkbox"
-              name="caracteristicas"
-              value="Descontraído"
-            />
-            <div
-              class="w-6 h-6 rounded-lg bg-gray-950 border-2 border-gray-500 transition-all duration-300 ease-in-out peer-checked:bg-gradient-to-br from-gray-700 to-gray-800 peer-checked:border-0 peer-checked:rotate-12 after:content-[''] after:absolute after:top-1/2 after:left-1/2 after:-translate-x-1/2 after:-translate-y-1/2 after:w-5 after:h-5 after:opacity-0 after:bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj48cG9seWxpbmUgcG9pbnRzPSIyMCA2IDkgMTcgNCAxMiI+PC9wb2x5bGluZT48L3N2Zz4=')] after:bg-contain after:bg-no-repeat peer-checked:after:opacity-100 after:transition-opacity after:duration-300 hover:shadow-[0_0_15px_rgba(168,85,247,0.5)]"
-            ></div>
-            <span class="ml-3 text-sm font-medium text-gray-300"
-              >Descontraído</span
+              3.1. Quem são seus clientes? (Perfil: gênero, idade, localização, etc.)
+            </label>
+          </div>
+          
+          <div class="relative mb-5">
+            <textarea
+              name="problemas_resolvidos"
+              class="peer w-full min-h-[52px] max-h-[200px] rounded-xl px-4 py-3 bg-black border-0 resize-none focus:ring-0 focus:outline-none leading-[1.2] text-gray-200"
+              required
+            ></textarea>
+            <label
+              class="absolute left-[10px] top-[4px] text-md px-1 text-gray-300 transition-all duration-300 ease-in-out peer-focus:-translate-y-[25px] peer-valid:-translate-y-[25px] peer-placeholder-shown:top-[5px] peer-placeholder-shown:text-gray-400 peer-focus:text-gray-400 peer-valid:text-gray-400 pointer-events-none peer-focus:truncate peer-valid:truncate peer-focus:w-[80%] peer-valid:w-[80%] peer-focus:overflow-hidden peer-valid:overflow-hidden"
             >
-          </label>
-
-          <label class="relative flex items-center cursor-pointer group">
-            <input
-              class="peer sr-only"
-              type="checkbox"
-              name="caracteristicas"
-              value="Popular"
-            />
-            <div
-              class="w-6 h-6 rounded-lg bg-gray-950 border-2 border-gray-500 transition-all duration-300 ease-in-out peer-checked:bg-gradient-to-br from-gray-700 to-gray-800 peer-checked:border-0 peer-checked:rotate-12 after:content-[''] after:absolute after:top-1/2 after:left-1/2 after:-translate-x-1/2 after:-translate-y-1/2 after:w-5 after:h-5 after:opacity-0 after:bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj48cG9seWxpbmUgcG9pbnRzPSIyMCA2IDkgMTcgNCAxMiI+PC9wb2x5bGluZT48L3N2Zz4=')] after:bg-contain after:bg-no-repeat peer-checked:after:opacity-100 after:transition-opacity after:duration-300 hover:shadow-[0_0_15px_rgba(168,85,247,0.5)]"
-            ></div>
-            <span class="ml-3 text-sm font-medium text-gray-300">Popular</span>
-          </label>
-
-          <label class="relative flex items-center cursor-pointer group">
-            <input
-              class="peer sr-only"
-              type="checkbox"
-              name="caracteristicas"
-              value="Singular"
-            />
-            <div
-              class="w-6 h-6 rounded-lg bg-gray-950 border-2 border-gray-500 transition-all duration-300 ease-in-out peer-checked:bg-gradient-to-br from-gray-700 to-gray-800 peer-checked:border-0 peer-checked:rotate-12 after:content-[''] after:absolute after:top-1/2 after:left-1/2 after:-translate-x-1/2 after:-translate-y-1/2 after:w-5 after:h-5 after:opacity-0 after:bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj48cG9seWxpbmUgcG9pbnRzPSIyMCA2IDkgMTcgNCAxMiI+PC9wb2x5bGluZT48L3N2Zz4=')] after:bg-contain after:bg-no-repeat peer-checked:after:opacity-100 after:transition-opacity after:duration-300 hover:shadow-[0_0_15px_rgba(168,85,247,0.5)]"
-            ></div>
-            <span class="ml-3 text-sm font-medium text-gray-300">Singular</span>
-          </label>
-
-          <label class="relative flex items-center cursor-pointer group">
-            <input
-              class="peer sr-only"
-              type="checkbox"
-              name="caracteristicas"
-              value="Pesado"
-            />
-            <div
-              class="w-6 h-6 rounded-lg bg-gray-950 border-2 border-gray-500 transition-all duration-300 ease-in-out peer-checked:bg-gradient-to-br from-gray-700 to-gray-800 peer-checked:border-0 peer-checked:rotate-12 after:content-[''] after:absolute after:top-1/2 after:left-1/2 after:-translate-x-1/2 after:-translate-y-1/2 after:w-5 after:h-5 after:opacity-0 after:bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj48cG9seWxpbmUgcG9pbnRzPSIyMCA2IDkgMTcgNCAxMiI+PC9wb2x5bGluZT48L3N2Zz4=')] after:bg-contain after:bg-no-repeat peer-checked:after:opacity-100 after:transition-opacity after:duration-300 hover:shadow-[0_0_15px_rgba(168,85,247,0.5)]"
-            ></div>
-            <span class="ml-3 text-sm font-medium text-gray-300">Pesado</span>
-          </label>
-
-          <label class="relative flex items-center cursor-pointer group">
-            <input
-              class="peer sr-only"
-              type="checkbox"
-              name="caracteristicas"
-              value="Leve"
-            />
-            <div
-              class="w-6 h-6 rounded-lg bg-gray-950 border-2 border-gray-500 transition-all duration-300 ease-in-out peer-checked:bg-gradient-to-br from-gray-700 to-gray-800 peer-checked:border-0 peer-checked:rotate-12 after:content-[''] after:absolute after:top-1/2 after:left-1/2 after:-translate-x-1/2 after:-translate-y-1/2 after:w-5 after:h-5 after:opacity-0 after:bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj48cG9seWxpbmUgcG9pbnRzPSIyMCA2IDkgMTcgNCAxMiI+PC9wb2x5bGluZT48L3N2Zz4=')] after:bg-contain after:bg-no-repeat peer-checked:after:opacity-100 after:transition-opacity after:duration-300 hover:shadow-[0_0_15px_rgba(168,85,247,0.5)]"
-            ></div>
-            <span class="ml-3 text-sm font-medium text-gray-300">Leve</span>
-          </label>
-
+              3.2. Quais problemas ou necessidades sua marca resolve para esses clientes?
+            </label>
+          </div>
+          
+          <div class="relative">
+            <textarea
+              name="canais_descoberta"
+              class="peer w-full min-h-[52px] max-h-[200px] rounded-xl px-4 py-3 bg-black border-0 resize-none focus:ring-0 focus:outline-none leading-[1.2] text-gray-200"
+              required
+            ></textarea>
+            <label
+              class="absolute left-[10px] top-[4px] text-md px-1 text-gray-300 transition-all duration-300 ease-in-out peer-focus:-translate-y-[25px] peer-valid:-translate-y-[25px] peer-placeholder-shown:top-[5px] peer-placeholder-shown:text-gray-400 peer-focus:text-gray-400 peer-valid:text-gray-400 pointer-events-none peer-focus:truncate peer-valid:truncate peer-focus:w-[80%] peer-valid:w-[80%] peer-focus:overflow-hidden peer-valid:overflow-hidden"
+            >
+              3.3. Como seu público descobre marcas como a sua?
+            </label>
+          </div>
+        </div>
+        
+        <!-- Seção 4: CONCORRÊNCIA E DIFERENCIAIS -->
+        <div class="bg-gray-800 p-4 rounded-lg mb-5">
+          <h2 class="text-xl font-bold text-gray-300 mb-4">4. CONCORRÊNCIA E DIFERENCIAIS</h2>
+          
+          <div class="relative mb-5">
+            <textarea
+              name="concorrentes"
+              class="peer w-full min-h-[52px] max-h-[200px] rounded-xl px-4 py-3 bg-black border-0 resize-none focus:ring-0 focus:outline-none leading-[1.2] text-gray-200"
+              required
+            ></textarea>
+            <label
+              class="absolute left-[10px] top-[4px] text-md px-1 text-gray-300 transition-all duration-300 ease-in-out peer-focus:-translate-y-[25px] peer-valid:-translate-y-[25px] peer-placeholder-shown:top-[5px] peer-placeholder-shown:text-gray-400 peer-focus:text-gray-400 peer-valid:text-gray-400 pointer-events-none peer-focus:truncate peer-valid:truncate peer-focus:w-[80%] peer-valid:w-[80%] peer-focus:overflow-hidden peer-valid:overflow-hidden"
+            >
+              4.1. Quem são seus principais concorrentes? (Forneça links, se possível)
+            </label>
+          </div>
+          
+          <div class="relative">
+            <textarea
+              name="diferenciais"
+              class="peer w-full min-h-[52px] max-h-[200px] rounded-xl px-4 py-3 bg-black border-0 resize-none focus:ring-0 focus:outline-none leading-[1.2] text-gray-200"
+              required
+            ></textarea>
+            <label
+              class="absolute left-[10px] top-[4px] text-md px-1 text-gray-300 transition-all duration-300 ease-in-out peer-focus:-translate-y-[25px] peer-valid:-translate-y-[25px] peer-placeholder-shown:top-[5px] peer-placeholder-shown:text-gray-400 peer-focus:text-gray-400 peer-valid:text-gray-400 pointer-events-none peer-focus:truncate peer-valid:truncate peer-focus:w-[80%] peer-valid:w-[80%] peer-focus:overflow-hidden peer-valid:overflow-hidden"
+            >
+              4.2. O que torna sua empresa diferente dos concorrentes?
+            </label>
+          </div>
+        </div>
+        
+        <!-- Seção 5: PERSONALIDADE VISUAL DA MARCA -->
+        <div class="bg-gray-800 p-4 rounded-lg mb-5">
+          <h2 class="text-xl font-bold text-gray-300 mb-4">5. PERSONALIDADE VISUAL DA MARCA</h2>
+          <p class="text-gray-300 mb-4">Ajude-nos a entender a identidade visual desejada marcando as opções que melhor representam sua marca:</p>
+          
+          <div class="grid grid-cols-2 gap-3 mb-5">
+            <!-- Linha 1: Moderno vs Tradicional -->
+            <div class="flex items-center justify-between bg-gray-900 p-3 rounded-lg">
+              <label class="relative flex items-center cursor-pointer group">
+                <input class="peer sr-only" type="checkbox" name="caracteristicas" value="Moderno" />
+                <div class="w-6 h-6 rounded-lg bg-gray-950 border-2 border-gray-500 transition-all duration-300 ease-in-out peer-checked:bg-gradient-to-br from-gray-700 to-gray-800 peer-checked:border-0 peer-checked:rotate-12 after:content-[''] after:absolute after:top-1/2 after:left-1/2 after:-translate-x-1/2 after:-translate-y-1/2 after:w-5 after:h-5 after:opacity-0 after:bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj48cG9seWxpbmUgcG9pbnRzPSIyMCA2IDkgMTcgNCAxMiI+PC9wb2x5bGluZT48L3N2Zz4=')] after:bg-contain after:bg-no-repeat peer-checked:after:opacity-100 after:transition-opacity after:duration-300 hover:shadow-[0_0_15px_rgba(168,85,247,0.5)]"></div>
+                <span class="ml-3 text-sm font-medium text-gray-300">Moderno</span>
+              </label>
+              
+              <label class="relative flex items-center cursor-pointer group">
+                <input class="peer sr-only" type="checkbox" name="caracteristicas" value="Tradicional" />
+                <div class="w-6 h-6 rounded-lg bg-gray-950 border-2 border-gray-500 transition-all duration-300 ease-in-out peer-checked:bg-gradient-to-br from-gray-700 to-gray-800 peer-checked:border-0 peer-checked:rotate-12 after:content-[''] after:absolute after:top-1/2 after:left-1/2 after:-translate-x-1/2 after:-translate-y-1/2 after:w-5 after:h-5 after:opacity-0 after:bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj48cG9seWxpbmUgcG9pbnRzPSIyMCA2IDkgMTcgNCAxMiI+PC9wb2x5bGluZT48L3N2Zz4=')] after:bg-contain after:bg-no-repeat peer-checked:after:opacity-100 after:transition-opacity after:duration-300 hover:shadow-[0_0_15px_rgba(168,85,247,0.5)]"></div>
+                <span class="ml-3 text-sm font-medium text-gray-300">Tradicional</span>
+              </label>
+            </div>
+            
+            <!-- Linha 2: Sério vs Descontraído -->
+            <div class="flex items-center justify-between bg-gray-900 p-3 rounded-lg">
+              <label class="relative flex items-center cursor-pointer group">
+                <input class="peer sr-only" type="checkbox" name="caracteristicas" value="Sério" />
+                <div class="w-6 h-6 rounded-lg bg-gray-950 border-2 border-gray-500 transition-all duration-300 ease-in-out peer-checked:bg-gradient-to-br from-gray-700 to-gray-800 peer-checked:border-0 peer-checked:rotate-12 after:content-[''] after:absolute after:top-1/2 after:left-1/2 after:-translate-x-1/2 after:-translate-y-1/2 after:w-5 after:h-5 after:opacity-0 after:bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj48cG9seWxpbmUgcG9pbnRzPSIyMCA2IDkgMTcgNCAxMiI+PC9wb2x5bGluZT48L3N2Zz4=')] after:bg-contain after:bg-no-repeat peer-checked:after:opacity-100 after:transition-opacity after:duration-300 hover:shadow-[0_0_15px_rgba(168,85,247,0.5)]"></div>
+                <span class="ml-3 text-sm font-medium text-gray-300">Sério</span>
+              </label>
+              
+              <label class="relative flex items-center cursor-pointer group">
+                <input class="peer sr-only" type="checkbox" name="caracteristicas" value="Descontraído" />
+                <div class="w-6 h-6 rounded-lg bg-gray-950 border-2 border-gray-500 transition-all duration-300 ease-in-out peer-checked:bg-gradient-to-br from-gray-700 to-gray-800 peer-checked:border-0 peer-checked:rotate-12 after:content-[''] after:absolute after:top-1/2 after:left-1/2 after:-translate-x-1/2 after:-translate-y-1/2 after:w-5 after:h-5 after:opacity-0 after:bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj48cG9seWxpbmUgcG9pbnRzPSIyMCA2IDkgMTcgNCAxMiI+PC9wb2x5bGluZT48L3N2Zz4=')] after:bg-contain after:bg-no-repeat peer-checked:after:opacity-100 after:transition-opacity after:duration-300 hover:shadow-[0_0_15px_rgba(168,85,247,0.5)]"></div>
+                <span class="ml-3 text-sm font-medium text-gray-300">Descontraído</span>
+              </label>
+            </div>
+            
+            <!-- Linha 3: Popular vs Exclusivo -->
+            <div class="flex items-center justify-between bg-gray-900 p-3 rounded-lg">
+              <label class="relative flex items-center cursor-pointer group">
+                <input class="peer sr-only" type="checkbox" name="caracteristicas" value="Popular" />
+                <div class="w-6 h-6 rounded-lg bg-gray-950 border-2 border-gray-500 transition-all duration-300 ease-in-out peer-checked:bg-gradient-to-br from-gray-700 to-gray-800 peer-checked:border-0 peer-checked:rotate-12 after:content-[''] after:absolute after:top-1/2 after:left-1/2 after:-translate-x-1/2 after:-translate-y-1/2 after:w-5 after:h-5 after:opacity-0 after:bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj48cG9seWxpbmUgcG9pbnRzPSIyMCA2IDkgMTcgNCAxMiI+PC9wb2x5bGluZT48L3N2Zz4=')] after:bg-contain after:bg-no-repeat peer-checked:after:opacity-100 after:transition-opacity after:duration-300 hover:shadow-[0_0_15px_rgba(168,85,247,0.5)]"></div>
+                <span class="ml-3 text-sm font-medium text-gray-300">Popular</span>
+              </label>
+              
+              <label class="relative flex items-center cursor-pointer group">
+                <input class="peer sr-only" type="checkbox" name="caracteristicas" value="Exclusivo" />
+                <div class="w-6 h-6 rounded-lg bg-gray-950 border-2 border-gray-500 transition-all duration-300 ease-in-out peer-checked:bg-gradient-to-br from-gray-700 to-gray-800 peer-checked:border-0 peer-checked:rotate-12 after:content-[''] after:absolute after:top-1/2 after:left-1/2 after:-translate-x-1/2 after:-translate-y-1/2 after:w-5 after:h-5 after:opacity-0 after:bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj48cG9seWxpbmUgcG9pbnRzPSIyMCA2IDkgMTcgNCAxMiI+PC9wb2x5bGluZT48L3N2Zz4=')] after:bg-contain after:bg-no-repeat peer-checked:after:opacity-100 after:transition-opacity after:duration-300 hover:shadow-[0_0_15px_rgba(168,85,247,0.5)]"></div>
+                <span class="ml-3 text-sm font-medium text-gray-300">Exclusivo</span>
+              </label>
+            </div>
+            
+            <!-- Linha 4: Sofisticado vs Simples -->
+            <div class="flex items-center justify-between bg-gray-900 p-3 rounded-lg">
+              <label class="relative flex items-center cursor-pointer group">
+                <input class="peer sr-only" type="checkbox" name="caracteristicas" value="Sofisticado" />
+                <div class="w-6 h-6 rounded-lg bg-gray-950 border-2 border-gray-500 transition-all duration-300 ease-in-out peer-checked:bg-gradient-to-br from-gray-700 to-gray-800 peer-checked:border-0 peer-checked:rotate-12 after:content-[''] after:absolute after:top-1/2 after:left-1/2 after:-translate-x-1/2 after:-translate-y-1/2 after:w-5 after:h-5 after:opacity-0 after:bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj48cG9seWxpbmUgcG9pbnRzPSIyMCA2IDkgMTcgNCAxMiI+PC9wb2x5bGluZT48L3N2Zz4=')] after:bg-contain after:bg-no-repeat peer-checked:after:opacity-100 after:transition-opacity after:duration-300 hover:shadow-[0_0_15px_rgba(168,85,247,0.5)]"></div>
+                <span class="ml-3 text-sm font-medium text-gray-300">Sofisticado</span>
+              </label>
+              
+              <label class="relative flex items-center cursor-pointer group">
+                <input class="peer sr-only" type="checkbox" name="caracteristicas" value="Simples" />
+                <div class="w-6 h-6 rounded-lg bg-gray-950 border-2 border-gray-500 transition-all duration-300 ease-in-out peer-checked:bg-gradient-to-br from-gray-700 to-gray-800 peer-checked:border-0 peer-checked:rotate-12 after:content-[''] after:absolute after:top-1/2 after:left-1/2 after:-translate-x-1/2 after:-translate-y-1/2 after:w-5 after:h-5 after:opacity-0 after:bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj48cG9seWxpbmUgcG9pbnRzPSIyMCA2IDkgMTcgNCAxMiI+PC9wb2x5bGluZT48L3N2Zz4=')] after:bg-contain after:bg-no-repeat peer-checked:after:opacity-100 after:transition-opacity after:duration-300 hover:shadow-[0_0_15px_rgba(168,85,247,0.5)]"></div>
+                <span class="ml-3 text-sm font-medium text-gray-300">Simples</span>
+              </label>
+            </div>
+            
+            <!-- Linha 5: Tecnológico vs Artesanal -->
+            <div class="flex items-center justify-between bg-gray-900 p-3 rounded-lg">
+              <label class="relative flex items-center cursor-pointer group">
+                <input class="peer sr-only" type="checkbox" name="caracteristicas" value="Tecnológico" />
+                <div class="w-6 h-6 rounded-lg bg-gray-950 border-2 border-gray-500 transition-all duration-300 ease-in-out peer-checked:bg-gradient-to-br from-gray-700 to-gray-800 peer-checked:border-0 peer-checked:rotate-12 after:content-[''] after:absolute after:top-1/2 after:left-1/2 after:-translate-x-1/2 after:-translate-y-1/2 after:w-5 after:h-5 after:opacity-0 after:bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj48cG9seWxpbmUgcG9pbnRzPSIyMCA2IDkgMTcgNCAxMiI+PC9wb2x5bGluZT48L3N2Zz4=')] after:bg-contain after:bg-no-repeat peer-checked:after:opacity-100 after:transition-opacity after:duration-300 hover:shadow-[0_0_15px_rgba(168,85,247,0.5)]"></div>
+                <span class="ml-3 text-sm font-medium text-gray-300">Tecnológico</span>
+              </label>
+              
+              <label class="relative flex items-center cursor-pointer group">
+                <input class="peer sr-only" type="checkbox" name="caracteristicas" value="Artesanal" />
+                <div class="w-6 h-6 rounded-lg bg-gray-950 border-2 border-gray-500 transition-all duration-300 ease-in-out peer-checked:bg-gradient-to-br from-gray-700 to-gray-800 peer-checked:border-0 peer-checked:rotate-12 after:content-[''] after:absolute after:top-1/2 after:left-1/2 after:-translate-x-1/2 after:-translate-y-1/2 after:w-5 after:h-5 after:opacity-0 after:bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj48cG9seWxpbmUgcG9pbnRzPSIyMCA2IDkgMTcgNCAxMiI+PC9wb2x5bGluZT48L3N2Zz4=')] after:bg-contain after:bg-no-repeat peer-checked:after:opacity-100 after:transition-opacity after:duration-300 hover:shadow-[0_0_15px_rgba(168,85,247,0.5)]"></div>
+                <span class="ml-3 text-sm font-medium text-gray-300">Artesanal</span>
+              </label>
+            </div>
+            
+            <!-- Linha 6: Minimalista vs Detalhado -->
+            <div class="flex items-center justify-between bg-gray-900 p-3 rounded-lg">
+              <label class="relative flex items-center cursor-pointer group">
+                <input class="peer sr-only" type="checkbox" name="caracteristicas" value="Minimalista" />
+                <div class="w-6 h-6 rounded-lg bg-gray-950 border-2 border-gray-500 transition-all duration-300 ease-in-out peer-checked:bg-gradient-to-br from-gray-700 to-gray-800 peer-checked:border-0 peer-checked:rotate-12 after:content-[''] after:absolute after:top-1/2 after:left-1/2 after:-translate-x-1/2 after:-translate-y-1/2 after:w-5 after:h-5 after:opacity-0 after:bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj48cG9seWxpbmUgcG9pbnRzPSIyMCA2IDkgMTcgNCAxMiI+PC9wb2x5bGluZT48L3N2Zz4=')] after:bg-contain after:bg-no-repeat peer-checked:after:opacity-100 after:transition-opacity after:duration-300 hover:shadow-[0_0_15px_rgba(168,85,247,0.5)]"></div>
+                <span class="ml-3 text-sm font-medium text-gray-300">Minimalista</span>
+              </label>
+              
+              <label class="relative flex items-center cursor-pointer group">
+                <input class="peer sr-only" type="checkbox" name="caracteristicas" value="Detalhado" />
+                <div class="w-6 h-6 rounded-lg bg-gray-950 border-2 border-gray-500 transition-all duration-300 ease-in-out peer-checked:bg-gradient-to-br from-gray-700 to-gray-800 peer-checked:border-0 peer-checked:rotate-12 after:content-[''] after:absolute after:top-1/2 after:left-1/2 after:-translate-x-1/2 after:-translate-y-1/2 after:w-5 after:h-5 after:opacity-0 after:bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj48cG9seWxpbmUgcG9pbnRzPSIyMCA2IDkgMTcgNCAxMiI+PC9wb2x5bGluZT48L3N2Zz4=')] after:bg-contain after:bg-no-repeat peer-checked:after:opacity-100 after:transition-opacity after:duration-300 hover:shadow-[0_0_15px_rgba(168,85,247,0.5)]"></div>
+                <span class="ml-3 text-sm font-medium text-gray-300">Detalhado</span>
+              </label>
+            </div>
+          </div>
+          
+          <div class="relative mb-5">
+            <textarea
+              name="outras_caracteristicas"
+              class="peer w-full min-h-[52px] max-h-[200px] rounded-xl px-4 py-3 bg-black border-0 resize-none focus:ring-0 focus:outline-none leading-[1.2] text-gray-200"
+              required
+            ></textarea>
+            <label
+              class="absolute left-[10px] top-[4px] text-md px-1 text-gray-300 transition-all duration-300 ease-in-out peer-focus:-translate-y-[25px] peer-valid:-translate-y-[25px] peer-placeholder-shown:top-[5px] peer-placeholder-shown:text-gray-400 peer-focus:text-gray-400 peer-valid:text-gray-400 pointer-events-none peer-focus:truncate peer-valid:truncate peer-focus:w-[80%] peer-valid:w-[80%] peer-focus:overflow-hidden peer-valid:overflow-hidden"
+            >
+              Outras características que deseja destacar sobre sua identidade visual?
+            </label>
+          </div>
+          
+          <div class="relative mb-5">
+            <textarea
+              name="preferencia_cores"
+              class="peer w-full min-h-[52px] max-h-[200px] rounded-xl px-4 py-3 bg-black border-0 resize-none focus:ring-0 focus:outline-none leading-[1.2] text-gray-200"
+              required
+            ></textarea>
+            <label
+              class="absolute left-[10px] top-[4px] text-md px-1 text-gray-300 transition-all duration-300 ease-in-out peer-focus:-translate-y-[25px] peer-valid:-translate-y-[25px] peer-placeholder-shown:top-[5px] peer-placeholder-shown:text-gray-400 peer-focus:text-gray-400 peer-valid:text-gray-400 pointer-events-none peer-focus:truncate peer-valid:truncate peer-focus:w-[80%] peer-valid:w-[80%] peer-focus:overflow-hidden peer-valid:overflow-hidden"
+            >
+              Possui preferências de cores? (Se sim, quais?)
+            </label>
+          </div>
+          
+          <div class="relative mb-5">
+            <textarea
+              name="cores_evitar"
+              class="peer w-full min-h-[52px] max-h-[200px] rounded-xl px-4 py-3 bg-black border-0 resize-none focus:ring-0 focus:outline-none leading-[1.2] text-gray-200"
+              required
+            ></textarea>
+            <label
+              class="absolute left-[10px] top-[4px] text-md px-1 text-gray-300 transition-all duration-300 ease-in-out peer-focus:-translate-y-[25px] peer-valid:-translate-y-[25px] peer-placeholder-shown:top-[5px] peer-placeholder-shown:text-gray-400 peer-focus:text-gray-400 peer-valid:text-gray-400 pointer-events-none peer-focus:truncate peer-valid:truncate peer-focus:w-[80%] peer-valid:w-[80%] peer-focus:overflow-hidden peer-valid:overflow-hidden"
+            >
+              Existe alguma cor que você gostaria de evitar?
+            </label>
+          </div>
+          
+          <div class="relative">
+            <textarea
+              name="referencias_visuais"
+              class="peer w-full min-h-[52px] max-h-[200px] rounded-xl px-4 py-3 bg-black border-0 resize-none focus:ring-0 focus:outline-none leading-[1.2] text-gray-200"
+              required
+            ></textarea>
+            <label
+              class="absolute left-[10px] top-[4px] text-md px-1 text-gray-300 transition-all duration-300 ease-in-out peer-focus:-translate-y-[25px] peer-valid:-translate-y-[25px] peer-placeholder-shown:top-[5px] peer-placeholder-shown:text-gray-400 peer-focus:text-gray-400 peer-valid:text-gray-400 pointer-events-none peer-focus:truncate peer-valid:truncate peer-focus:w-[80%] peer-valid:w-[80%] peer-focus:overflow-hidden peer-valid:overflow-hidden"
+            >
+              Possui referências visuais de marcas que admira? (Envie links, se possível)
+            </label>
+          </div>
+        </div>
+        
+        <!-- Seção 6: CONSIDERAÇÕES FINAIS -->
+        <div class="bg-gray-800 p-4 rounded-lg mb-5">
+          <h2 class="text-xl font-bold text-gray-300 mb-4">6. CONSIDERAÇÕES FINAIS</h2>
+          
+          <div class="relative">
+            <textarea
+              name="informacoes_adicionais"
+              class="peer w-full min-h-[80px] max-h-[200px] rounded-xl px-4 py-3 bg-black border-0 resize-none focus:ring-0 focus:outline-none leading-[1.2] text-gray-200"
+              required
+            ></textarea>
+            <label
+              class="absolute left-[10px] top-[4px] text-md px-1 text-gray-300 transition-all duration-300 ease-in-out peer-focus:-translate-y-[25px] peer-valid:-translate-y-[25px] peer-placeholder-shown:top-[5px] peer-placeholder-shown:text-gray-400 peer-focus:text-gray-400 peer-valid:text-gray-400 pointer-events-none peer-focus:truncate peer-valid:truncate peer-focus:w-[80%] peer-valid:w-[80%] peer-focus:overflow-hidden peer-valid:overflow-hidden"
+            >
+              6.1. Tem alguma outra informação relevante que deseja adicionar?
+            </label>
+          </div>
         </div>
 
-        <div class="relative">
-          <textarea
-            name="outras_caracteristicas"
-            type="text"
-            class="peer w-full min-h-[52px] max-h-[200px] rounded-xl px-4 py-3 bg-black border-0 resize-none focus:ring-0 focus:outline-none leading-[1.2] text-gray-200"
-            required
-          ></textarea>
-          <label
-            class="absolute left-[10px] top-[4px] text-md px-1 text-gray-300 transition-all duration-300 ease-in-out peer-focus:-translate-y-[25px] peer-valid:-translate-y-[25px] peer-placeholder-shown:top-[5px] peer-placeholder-shown:text-gray-400 peer-focus:text-gray-400 peer-valid:text-gray-400 pointer-events-none peer-focus:truncate peer-valid:truncate peer-focus:w-[80%] peer-valid:w-[80%] peer-focus:overflow-hidden peer-valid:overflow-hidden"
-          >
-            Complete ou descreva outras características:
-          </label>
-        </div>
-
-        <div class="relative">
-          <textarea
-            name="informacoes_adicionais"
-            type="text"
-            class="peer w-full min-h-[52px] max-h-[200px] rounded-xl px-4 py-3 bg-black border-0 resize-none focus:ring-0 focus:outline-none leading-[1.2] text-gray-200"
-            required
-          ></textarea>
-          <label
-            class="absolute left-[10px] top-[4px] text-md px-1 text-gray-300 transition-all duration-300 ease-in-out peer-focus:-translate-y-[25px] peer-valid:-translate-y-[25px] peer-placeholder-shown:top-[5px] peer-placeholder-shown:text-gray-400 peer-focus:text-gray-400 peer-valid:text-gray-400 pointer-events-none peer-focus:truncate peer-valid:truncate peer-focus:w-[80%] peer-valid:w-[80%] peer-focus:overflow-hidden peer-valid:overflow-hidden"
-          >
-            Ainda tem algo a dizer?
-          </label>
-        </div>
-
+        <p class="text-gray-300 text-center mb-5">Muito obrigado! Suas respostas serão fundamentais para a criação de uma marca que represente sua essência e conquiste seu público.</p>
+        
         <button
           type="submit"
           class="w-full bg-blue-950 hover:opacity-50 text-white p-3 rounded mt-4"
