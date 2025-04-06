@@ -1,35 +1,42 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const txtEfeito = document.querySelector<HTMLElement>("#txtEfeito");
-  const alfabeto: string = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
-  let intervalo: number | null = null;
+  // Configurar checkboxes mutuamente exclusivas
+  const setupMutuallyExclusiveCheckboxes = () => {
+    const paresExclusivos: { [key: string]: string } = {
+      "Moderno": "Tradicional",
+      "Tradicional": "Moderno",
+      "Sério": "Descontraído",
+      "Descontraído": "Sério",
+      "Popular": "Exclusivo",
+      "Exclusivo": "Popular",
+      "Sofisticado": "Simples",
+      "Simples": "Sofisticado",
+      "Tecnológico": "Artesanal",
+      "Artesanal": "Tecnológico",
+      "Minimalista": "Detalhado",
+      "Detalhado": "Minimalista"
+    };
 
-  if (!txtEfeito) return; // Garante que o elemento existe antes de continuar
+    // Adicionar event listeners para cada checkbox
+    const checkboxes = document.querySelectorAll<HTMLInputElement>('input[name="caracteristicas"]');
+    
+    checkboxes.forEach(checkbox => {
+      checkbox.addEventListener('change', function() {
+        const value = this.value;
+        
+        // Se esta checkbox foi marcada, desmarque a oposta
+        if (this.checked && paresExclusivos[value]) {
+          const opostoCheckbox = document.querySelector<HTMLInputElement>(`input[name="caracteristicas"][value="${paresExclusivos[value]}"]`);
+          if (opostoCheckbox) {
+            opostoCheckbox.checked = false;
+          }
+        }
+      });
+    });
+  };
 
-  const textoOriginal: string = txtEfeito.dataset.texto || txtEfeito.innerText;
-
-  txtEfeito.addEventListener("mouseover", () => {
-    let contador = 0;
-    if (intervalo) clearInterval(intervalo);
-
-    intervalo = window.setInterval(() => {
-      txtEfeito.innerText = textoOriginal
-        .split("")
-        .map((_, i) =>
-          i < contador
-            ? textoOriginal[i]
-            : alfabeto[Math.floor(Math.random() * 26)]
-        )
-        .join("");
-
-      if (contador >= textoOriginal.length) {
-        if (intervalo) clearInterval(intervalo);
-      }
-
-      contador += 1 / 3;
-    }, 30);
-  });
-
+  // Chamar a função de configuração após o DOM estar completamente carregado
+  setupMutuallyExclusiveCheckboxes();
   
   const form = document.getElementById("briefingForm") as HTMLFormElement;
 

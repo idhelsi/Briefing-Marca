@@ -1,29 +1,34 @@
 "use strict";
 document.addEventListener("DOMContentLoaded", () => {
-    const txtEfeito = document.querySelector("#txtEfeito");
-    const alfabeto = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-    let intervalo = null;
-    if (!txtEfeito)
-        return;
-    const textoOriginal = txtEfeito.dataset.texto || txtEfeito.innerText;
-    txtEfeito.addEventListener("mouseover", () => {
-        let contador = 0;
-        if (intervalo)
-            clearInterval(intervalo);
-        intervalo = window.setInterval(() => {
-            txtEfeito.innerText = textoOriginal
-                .split("")
-                .map((_, i) => i < contador
-                ? textoOriginal[i]
-                : alfabeto[Math.floor(Math.random() * 26)])
-                .join("");
-            if (contador >= textoOriginal.length) {
-                if (intervalo)
-                    clearInterval(intervalo);
-            }
-            contador += 1 / 3;
-        }, 30);
-    });
+    const setupMutuallyExclusiveCheckboxes = () => {
+        const paresExclusivos = {
+            "Moderno": "Tradicional",
+            "Tradicional": "Moderno",
+            "Sério": "Descontraído",
+            "Descontraído": "Sério",
+            "Popular": "Exclusivo",
+            "Exclusivo": "Popular",
+            "Sofisticado": "Simples",
+            "Simples": "Sofisticado",
+            "Tecnológico": "Artesanal",
+            "Artesanal": "Tecnológico",
+            "Minimalista": "Detalhado",
+            "Detalhado": "Minimalista"
+        };
+        const checkboxes = document.querySelectorAll('input[name="caracteristicas"]');
+        checkboxes.forEach(checkbox => {
+            checkbox.addEventListener('change', function () {
+                const value = this.value;
+                if (this.checked && paresExclusivos[value]) {
+                    const opostoCheckbox = document.querySelector(`input[name="caracteristicas"][value="${paresExclusivos[value]}"]`);
+                    if (opostoCheckbox) {
+                        opostoCheckbox.checked = false;
+                    }
+                }
+            });
+        });
+    };
+    setupMutuallyExclusiveCheckboxes();
     const form = document.getElementById("briefingForm");
     if (!form)
         return;
